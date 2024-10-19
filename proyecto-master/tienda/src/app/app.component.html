@@ -1,0 +1,22 @@
+
+<app-header></app-header>
+<main class="container mx-auto p-4">
+  <router-outlet></router-outlet>
+</main>
+
+<app-spinner *ngIf="isLoading"></app-spinner>
+
+<footer class="bg-gray-800 text-white text-center py-4">
+  <p>&copy; 2024 Ferreteria UMG. Todos los derechos reservados.</p>
+  <p>
+    Contactos: 
+    <a href="mailto:wsarpecs@miumg.edu.gt" class="email-link">wsarpecs&#64;miumg.edu.gt</a>  |
+    <a href="fhernandeza8@miumg.edu.gt" class="email-link">fhernandeza8&#64;miumg.edu.gt</a> |
+    <a href="mailto:gdeleonm10@miumg.edu.gt" class="email-link">gdeleonm10&#64;miumg.edu.gt</a> 
+  </p>
+  <p>
+    Síguenos en nuestras redes sociales: 
+    <a href="https://facebook.com" target="_blank">Facebook</a> |
+    <a href="https://twitter.com" target="_blank">Twitter</a>
+  </p>
+</footer>

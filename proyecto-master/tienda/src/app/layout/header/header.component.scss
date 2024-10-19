@@ -1,0 +1,52 @@
+// Animación del carrito
+@keyframes slideDown {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.show-cart-animation {
+  animation: slideDown 0.5s ease-in-out forwards;
+}
+
+nav a {
+  transition: color 0.3s ease-in-out;
+}
+
+nav a.text-2xl:hover {
+  color: #FBBF24; // Cambia el color a un tono más claro de naranja
+}
+
+nav svg {
+  transition: transform 0.2s ease-in-out;
+}
+
+nav svg:hover {
+  transform: scale(1.1); // Escala el icono ligeramente al pasar el ratón
+}
+
+
+nav span.absolute {
+  background-color: #EF4444; // Fondo rojo para resaltar
+  border-radius: 50%; // Hace el contador completamente circular
+  padding: 0.15rem 0.3rem; // Ajusta el tamaño para que sea consistente
+  font-size: 0.75rem; // Tamaño pequeño de fuente
+}
+
+
+.show-cart-animation {
+  animation: slideDown 0.5s ease-in-out forwards;
+}
+
+
+nav .relative .absolute {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Sombra ligera para dar profundidad
+  border: 1px solid #D1D5DB; // Borde gris claro
+}
